@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.9.1)
+  - IkoSwiftLint (0.0.6):
+    - SwiftLint
+  - SwiftLint (0.39.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - IkoSwiftLint
+
+SPEC REPOS:
+  "git@bitbucket.org:ikomobi/ikopods.git":
+    - IkoSwiftLint
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  IkoSwiftLint: 87067a83efdbb61976acca9d2d191c03a063c618
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
+
+PODFILE CHECKSUM: a3434dcd8cb3738d5d648b77d4d6be9f9ca52963
+
+COCOAPODS: 1.8.4

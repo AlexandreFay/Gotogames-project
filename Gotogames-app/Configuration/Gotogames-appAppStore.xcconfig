@@ -1,0 +1,6 @@
+#include "../../Pods/Target Support Files/Pods-Gotogames-app/Pods-Gotogames-app-Release.xcconfig"
+#include "Environment/Prod.xcconfig"
+#include "Shared/AppSettings.xcconfig"
+#include "Shared/ProvisioningAppStore.xcconfig"
+#include "Shared/AppStore.xcconfig"
+

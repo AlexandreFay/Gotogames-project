@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7E23A109391ADE95AC377C4 /* Pods_Gotogames_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90BF32C8E7FE17E9E603962 /* Pods_Gotogames_app.framework */; };
+		FAB79B1D2410150800F55751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB79B1C2410150800F55751 /* AppDelegate.swift */; };
+		FAB79B212410150800F55751 /* UIViewLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB79B202410150800F55751 /* UIViewLocalizable.swift */; };
+		FAB79B272410150800F55751 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB79B262410150800F55751 /* Style.swift */; };
+		FAB79B292410150800F55751 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB79B282410150800F55751 /* Theme.swift */; };
+		FAB79B482410150900F55751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB79B462410150900F55751 /* Main.storyboard */; };
+		FAB79B4A2410150900F55751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB79B492410150900F55751 /* Assets.xcassets */; };
+		FAB79B4D2410150900F55751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB79B4B2410150900F55751 /* LaunchScreen.storyboard */; };
+		FAB79B562410156600F55751 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = FAB79B542410156600F55751 /* Gemfile */; };
+		FAB79B572410156600F55751 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAB79B552410156600F55751 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		655CE8641811427BB40EFB82 /* Pods-Gotogames-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotogames-app.release.xcconfig"; path = "Target Support Files/Pods-Gotogames-app/Pods-Gotogames-app.release.xcconfig"; sourceTree = "<group>"; };
+		924DE798B322E5C09725FFDF /* Pods-Gotogames-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotogames-app.debug.xcconfig"; path = "Target Support Files/Pods-Gotogames-app/Pods-Gotogames-app.debug.xcconfig"; sourceTree = "<group>"; };
+		D90BF32C8E7FE17E9E603962 /* Pods_Gotogames_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gotogames_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB79B192410150800F55751 /* Gotogames-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gotogames-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB79B1C2410150800F55751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAB79B202410150800F55751 /* UIViewLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLocalizable.swift; sourceTree = "<group>"; };
+		FAB79B232410150800F55751 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FAB79B262410150800F55751 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		FAB79B282410150800F55751 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		FAB79B2B2410150800F55751 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FAB79B2D2410150800F55751 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FAB79B2F2410150800F55751 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FAB79B312410150900F55751 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		FAB79B332410150900F55751 /* Gotogames-appAppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Gotogames-appAppStore.xcconfig"; sourceTree = "<group>"; };
+		FAB79B342410150900F55751 /* Gotogames-appDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Gotogames-appDebug.xcconfig"; sourceTree = "<group>"; };
+		FAB79B352410150900F55751 /* Gotogames-appInHouse.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Gotogames-appInHouse.xcconfig"; sourceTree = "<group>"; };
+		FAB79B372410150900F55751 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
+		FAB79B392410150900F55751 /* AppSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppSettings.xcconfig; sourceTree = "<group>"; };
+		FAB79B3A2410150900F55751 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
+		FAB79B3B2410150900F55751 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		FAB79B3C2410150900F55751 /* InHouse.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = InHouse.xcconfig; sourceTree = "<group>"; };
+		FAB79B3D2410150900F55751 /* ProvisioningAppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProvisioningAppStore.xcconfig; sourceTree = "<group>"; };
+		FAB79B3E2410150900F55751 /* ProvisioningDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProvisioningDebug.xcconfig; sourceTree = "<group>"; };
+		FAB79B3F2410150900F55751 /* ProvisioningInHouse.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProvisioningInHouse.xcconfig; sourceTree = "<group>"; };
+		FAB79B452410150900F55751 /* swift_lint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = swift_lint.sh; sourceTree = "<group>"; };
+		FAB79B472410150900F55751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAB79B492410150900F55751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAB79B4C2410150900F55751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAB79B4E2410150900F55751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB79B542410156600F55751 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
+		FAB79B552410156600F55751 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB79B152410150800F55751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E23A109391ADE95AC377C4 /* Pods_Gotogames_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		426A386F853979C113EF08CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D90BF32C8E7FE17E9E603962 /* Pods_Gotogames_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E9B9888EBEFFEE96709DB1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				924DE798B322E5C09725FFDF /* Pods-Gotogames-app.debug.xcconfig */,
+				655CE8641811427BB40EFB82 /* Pods-Gotogames-app.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FAB79B0F2410150800F55751 = {
+			isa = PBXGroup;
+			children = (
+				FAB79B1B2410150800F55751 /* Gotogames-app */,
+				FAB79B1A2410150800F55751 /* Products */,
+				7E9B9888EBEFFEE96709DB1F /* Pods */,
+				426A386F853979C113EF08CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB79B1A2410150800F55751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B192410150800F55751 /* Gotogames-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB79B1B2410150800F55751 /* Gotogames-app */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B1C2410150800F55751 /* AppDelegate.swift */,
+				FAB79B462410150900F55751 /* Main.storyboard */,
+				FAB79B492410150900F55751 /* Assets.xcassets */,
+				FAB79B4B2410150900F55751 /* LaunchScreen.storyboard */,
+				FAB79B4E2410150900F55751 /* Info.plist */,
+				FAB79B542410156600F55751 /* Gemfile */,
+				FAB79B552410156600F55751 /* Podfile */,
+				FAB79B1E2410150800F55751 /* Classes */,
+				FAB79B322410150900F55751 /* Configuration */,
+				FAB79B442410150900F55751 /* Scripts */,
+			);
+			path = "Gotogames-app";
+			sourceTree = "<group>";
+		};
+		FAB79B1E2410150800F55751 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B1F2410150800F55751 /* Extensions */,
+				FAB79B222410150800F55751 /* Interfaces */,
+				FAB79B242410150800F55751 /* Managers */,
+				FAB79B2A2410150800F55751 /* Models */,
+				FAB79B2C2410150800F55751 /* Parsers */,
+				FAB79B2E2410150800F55751 /* Providers */,
+				FAB79B302410150900F55751 /* Services */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FAB79B1F2410150800F55751 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B202410150800F55751 /* UIViewLocalizable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAB79B222410150800F55751 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B232410150800F55751 /* .gitkeep */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		FAB79B242410150800F55751 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B252410150800F55751 /* Theme */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FAB79B252410150800F55751 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B262410150800F55751 /* Style.swift */,
+				FAB79B282410150800F55751 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		FAB79B2A2410150800F55751 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B2B2410150800F55751 /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAB79B2C2410150800F55751 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B2D2410150800F55751 /* .gitkeep */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		FAB79B2E2410150800F55751 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B2F2410150800F55751 /* .gitkeep */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		FAB79B302410150900F55751 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B312410150900F55751 /* .gitkeep */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FAB79B322410150900F55751 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B332410150900F55751 /* Gotogames-appAppStore.xcconfig */,
+				FAB79B342410150900F55751 /* Gotogames-appDebug.xcconfig */,
+				FAB79B352410150900F55751 /* Gotogames-appInHouse.xcconfig */,
+				FAB79B362410150900F55751 /* Environment */,
+				FAB79B382410150900F55751 /* Shared */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		FAB79B362410150900F55751 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B372410150900F55751 /* Prod.xcconfig */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		FAB79B382410150900F55751 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B392410150900F55751 /* AppSettings.xcconfig */,
+				FAB79B3A2410150900F55751 /* AppStore.xcconfig */,
+				FAB79B3B2410150900F55751 /* Debug.xcconfig */,
+				FAB79B3C2410150900F55751 /* InHouse.xcconfig */,
+				FAB79B3D2410150900F55751 /* ProvisioningAppStore.xcconfig */,
+				FAB79B3E2410150900F55751 /* ProvisioningDebug.xcconfig */,
+				FAB79B3F2410150900F55751 /* ProvisioningInHouse.xcconfig */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FAB79B442410150900F55751 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B452410150900F55751 /* swift_lint.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB79B182410150800F55751 /* Gotogames-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB79B512410150900F55751 /* Build configuration list for PBXNativeTarget "Gotogames-app" */;
+			buildPhases = (
+				601B59650EB8C150859ABD74 /* [CP] Check Pods Manifest.lock */,
+				FAB79B142410150800F55751 /* Sources */,
+				FAB79B152410150800F55751 /* Frameworks */,
+				FAB79B162410150800F55751 /* Resources */,
+				FAB79B172410150800F55751 /* Swift Lint */,
+				46291DFF2F943F3BD186A557 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gotogames-app";
+			productName = "Gotogames-app";
+			productReference = FAB79B192410150800F55751 /* Gotogames-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB79B102410150800F55751 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = gotogames;
+				TargetAttributes = {
+					FAB79B182410150800F55751 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FAB79B132410150800F55751 /* Build configuration list for PBXProject "Gotogames-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAB79B0F2410150800F55751;
+			productRefGroup = FAB79B1A2410150800F55751 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB79B182410150800F55751 /* Gotogames-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB79B162410150800F55751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB79B572410156600F55751 /* Podfile in Resources */,
+				FAB79B562410156600F55751 /* Gemfile in Resources */,
+				FAB79B4D2410150900F55751 /* LaunchScreen.storyboard in Resources */,
+				FAB79B4A2410150900F55751 /* Assets.xcassets in Resources */,
+				FAB79B482410150900F55751 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46291DFF2F943F3BD186A557 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gotogames-app/Pods-Gotogames-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gotogames-app/Pods-Gotogames-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gotogames-app/Pods-Gotogames-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		601B59650EB8C150859ABD74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gotogames-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAB79B172410150800F55751 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"${SRCROOT}/Gotogames-app/Scripts/swift_lint.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB79B142410150800F55751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB79B1D2410150800F55751 /* AppDelegate.swift in Sources */,
+				FAB79B292410150800F55751 /* Theme.swift in Sources */,
+				FAB79B272410150800F55751 /* Style.swift in Sources */,
+				FAB79B212410150800F55751 /* UIViewLocalizable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAB79B462410150900F55751 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB79B472410150900F55751 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAB79B4B2410150900F55751 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB79B4C2410150900F55751 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB79B4F2410150900F55751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAB79B502410150900F55751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB79B522410150900F55751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924DE798B322E5C09725FFDF /* Pods-Gotogames-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L65NC338AZ;
+				INFOPLIST_FILE = "Gotogames-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gotogames.Gotogames-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAB79B532410150900F55751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 655CE8641811427BB40EFB82 /* Pods-Gotogames-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L65NC338AZ;
+				INFOPLIST_FILE = "Gotogames-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gotogames.Gotogames-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB79B132410150800F55751 /* Build configuration list for PBXProject "Gotogames-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB79B4F2410150900F55751 /* Debug */,
+				FAB79B502410150900F55751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB79B512410150900F55751 /* Build configuration list for PBXNativeTarget "Gotogames-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB79B522410150900F55751 /* Debug */,
+				FAB79B532410150900F55751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB79B102410150800F55751 /* Project object */;
+}

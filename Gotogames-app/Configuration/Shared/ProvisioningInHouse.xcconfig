@@ -1,0 +1,4 @@
+CODE_SIGN_IDENTITY = iPhone Distribution: ikomobi
+CODE_SIGN_IDENTITY[sdk=*] = iPhone Distribution: ikomobi
+PROVISIONING_PROFILE =
+PROVISIONING_PROFILE[sdk=*] =
