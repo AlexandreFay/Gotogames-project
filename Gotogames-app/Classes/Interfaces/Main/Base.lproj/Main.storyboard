@@ -11,7 +11,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="Gotogames_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="Gotogames_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,9 +23,9 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Suv-LT-WWX">
-                                <rect key="frame" x="0.0" y="712" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="712" width="414" height="184"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="74s-NN-THA"/>
+                                    <constraint firstAttribute="height" constant="184" id="74s-NN-THA"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="xhx-OL-eqb" kind="embed" identifier="CountryInformationsSegue" id="j3u-y5-q3a"/>
@@ -40,12 +40,11 @@
                             <constraint firstItem="Suv-LT-WWX" firstAttribute="leading" secondItem="7UG-MH-xuL" secondAttribute="leading" id="YlB-Sp-FEe"/>
                             <constraint firstItem="7UG-MH-xuL" firstAttribute="trailing" secondItem="uuh-Ll-2lf" secondAttribute="trailing" id="iqd-7m-aEQ"/>
                             <constraint firstItem="uuh-Ll-2lf" firstAttribute="leading" secondItem="7UG-MH-xuL" secondAttribute="leading" id="rNL-6D-tf5"/>
-                            <constraint firstItem="7UG-MH-xuL" firstAttribute="bottom" secondItem="Suv-LT-WWX" secondAttribute="bottom" id="vlH-hP-VnC"/>
+                            <constraint firstAttribute="bottom" secondItem="Suv-LT-WWX" secondAttribute="bottom" id="vlH-hP-VnC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7UG-MH-xuL"/>
                     </view>
                     <navigationItem key="navigationItem" id="qnX-Oh-Beo"/>
-                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,11 +55,11 @@
             <objects>
                 <viewController storyboardIdentifier="CountryPickerViewController" id="JKq-fd-8G5" customClass="CountryPickerViewController" customModule="Gotogames_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VNh-Bk-X7b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="668"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="702"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uip-EF-OEg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="658"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="JKq-fd-8G5" id="dSO-Vy-6kF"/>
@@ -129,13 +128,15 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="O55-Ei-AEz"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="show_card_button"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="showCardButtonSelected:" destination="xhx-OL-eqb" eventType="touchUpInside" id="S7h-gd-tx1"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Sum-Ja-CcK" firstAttribute="trailing" secondItem="gwn-jb-gZG" secondAttribute="trailing" constant="20" id="0Ci-gM-BG8"/>
                             <constraint firstAttribute="trailing" secondItem="0RL-HY-jaO" secondAttribute="trailing" id="62F-r2-LPO"/>

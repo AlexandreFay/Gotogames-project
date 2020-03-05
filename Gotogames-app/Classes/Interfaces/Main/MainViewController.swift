@@ -34,7 +34,6 @@ extension MainViewController: CountryPickerDelegate {
 extension MainViewController: CountryInformationsDelegate {
     
     func didSelectCardButton() {
-        NavigationStrategy.sharedInstance.displayCardPage { (success, _) in
-        }
+        NavigationStrategy.sharedInstance.displayCardPage(completion: nil)
     }
 }

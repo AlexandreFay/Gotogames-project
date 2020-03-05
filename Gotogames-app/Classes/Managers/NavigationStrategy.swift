@@ -21,20 +21,21 @@ class NavigationStrategy: NSObject {
         let viewController = MainViewController.instantiate(storyboardNamed: "Main")
         let navigationController = UINavigationController(rootViewController: viewController)
         currentNavController = navigationController
+        navigationController.setNavigationBarHidden(true, animated: false)
 
         appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
         appDelegate.window?.rootViewController = navigationController
         appDelegate.window?.makeKeyAndVisible()
     }
     
-    func displayCardPage(completion: @escaping SuccessCompletionHandler) {
+    func displayCardPage(completion: SuccessCompletionHandler) {
         let cardVC = CardViewController.instantiate(storyboardNamed: "CardStoryboard")
         let navigationController = UINavigationController(rootViewController: cardVC)
         navigationController.setNavigationBarHidden(true, animated: false)
         navigationController.modalPresentationStyle = .overCurrentContext
         
         self.currentNavController?.present(navigationController, animated: true, completion: {
-            completion(true, nil)
+            completion?(true, nil)
         })
     }
     

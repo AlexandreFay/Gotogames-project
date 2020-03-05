@@ -9,4 +9,5 @@
 // Main
 "country_name" = "Nom du pays : %@";
 "capital_city_name" = "Capital : %@";
+"show_card_button" = "Afficher carte";
 

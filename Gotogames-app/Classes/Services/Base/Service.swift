@@ -10,7 +10,7 @@ import Alamofire
 import UIKit
 
 typealias ServiceCompletionHandler = (_ result: Any?, _ success: Bool?, _ error: NSError?) -> Void
-typealias SuccessCompletionHandler = (_ success: Bool?, _ error: NSError?) -> Void
+typealias SuccessCompletionHandler = ((_ success: Bool?, _ error: NSError?) -> Void)?
 
 class Service: NSObject {
     

@@ -9,18 +9,14 @@
 import UIKit
 
 class MyCustomButton: UIButton {
-    
-    var centeredPoint: CGPoint?
-    
+        
     override func draw(_ rect: CGRect) {
         guard let context = UIGraphicsGetCurrentContext() else { return }
-        
-        centeredPoint = CGPoint(x: bounds.size.width / 2, y: bounds.size.height / 2)
-        
+                
         drawBackgroundRectangle(of: rect, context: context)
         drawTopBorder(of: rect, context: context)
         
-        tintColor = UIColor.white
+        tintColor = UIColor.black
     }
     
     private func drawBackgroundRectangle(of rect: CGRect, context: CGContext) {
@@ -37,7 +33,7 @@ class MyCustomButton: UIButton {
         path.addArc(tangent1End: lowerRightCorner, tangent2End: upperRightCorner, radius: 15.0)
         path.closeSubpath()
 
-        context.setFillColor(UIColor.lightGray.cgColor)
+        context.setFillColor(UIColor.white.cgColor)
         context.addPath(path)
         context.fillPath()
         context.saveGState()

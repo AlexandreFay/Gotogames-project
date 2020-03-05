@@ -12,7 +12,7 @@ class CountryPickerViewModel: NSObject {
     
     var countryList: [Country] = []
     
-    func getCountries(completion: @escaping SuccessCompletionHandler) {
+    func getCountries(completion: SuccessCompletionHandler) {
         let parser = CountriesParser()
         let service = CountryService()
         
@@ -20,7 +20,7 @@ class CountryPickerViewModel: NSObject {
             if let countries = result as? [Country] {
                 self.countryList = countries
             }
-            completion(success, error)
+            completion?(success, error)
         }
     }
     
