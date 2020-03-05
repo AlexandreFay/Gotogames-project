@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  SpeedOfLight
+
+  Created by Thibaut Brunel on 15/01/2020.
+  Copyright © 2020 ikomobi. All rights reserved.
+*/
+
+// Main
+"country_name" = "Nom du pays : %@";
+"capital_city_name" = "Capital : %@";
+"show_card_button" = "Afficher carte";
+

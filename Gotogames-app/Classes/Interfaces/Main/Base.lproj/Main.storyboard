@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="Gotogames_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuh-Ll-2lf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="668"/>
+                                <connections>
+                                    <segue destination="JKq-fd-8G5" kind="embed" identifier="CountryPickerSegue" id="Xsy-1i-QiT"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Suv-LT-WWX">
+                                <rect key="frame" x="0.0" y="712" width="414" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="74s-NN-THA"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="xhx-OL-eqb" kind="embed" identifier="CountryInformationsSegue" id="j3u-y5-q3a"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Suv-LT-WWX" firstAttribute="top" secondItem="uuh-Ll-2lf" secondAttribute="bottom" id="6hR-Dj-zCo"/>
+                            <constraint firstItem="7UG-MH-xuL" firstAttribute="trailing" secondItem="Suv-LT-WWX" secondAttribute="trailing" id="I04-GT-tgI"/>
+                            <constraint firstItem="uuh-Ll-2lf" firstAttribute="top" secondItem="7UG-MH-xuL" secondAttribute="top" id="RDb-u7-LPB"/>
+                            <constraint firstItem="Suv-LT-WWX" firstAttribute="leading" secondItem="7UG-MH-xuL" secondAttribute="leading" id="YlB-Sp-FEe"/>
+                            <constraint firstItem="7UG-MH-xuL" firstAttribute="trailing" secondItem="uuh-Ll-2lf" secondAttribute="trailing" id="iqd-7m-aEQ"/>
+                            <constraint firstItem="uuh-Ll-2lf" firstAttribute="leading" secondItem="7UG-MH-xuL" secondAttribute="leading" id="rNL-6D-tf5"/>
+                            <constraint firstAttribute="bottom" secondItem="Suv-LT-WWX" secondAttribute="bottom" id="vlH-hP-VnC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7UG-MH-xuL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qnX-Oh-Beo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="106"/>
+        </scene>
+        <!--Country Picker View Controller-->
+        <scene sceneID="co1-3Z-JUZ">
+            <objects>
+                <viewController storyboardIdentifier="CountryPickerViewController" id="JKq-fd-8G5" customClass="CountryPickerViewController" customModule="Gotogames_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VNh-Bk-X7b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="702"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uip-EF-OEg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="JKq-fd-8G5" id="dSO-Vy-6kF"/>
+                                    <outlet property="delegate" destination="JKq-fd-8G5" id="AOu-ED-pDc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mDc-wo-Hbp" firstAttribute="trailing" secondItem="uip-EF-OEg" secondAttribute="trailing" id="7Te-Ej-2WE"/>
+                            <constraint firstItem="mDc-wo-Hbp" firstAttribute="bottom" secondItem="uip-EF-OEg" secondAttribute="bottom" constant="10" id="CIe-tg-jWc"/>
+                            <constraint firstItem="uip-EF-OEg" firstAttribute="top" secondItem="VNh-Bk-X7b" secondAttribute="top" id="aUq-gH-Rpm"/>
+                            <constraint firstItem="uip-EF-OEg" firstAttribute="leading" secondItem="mDc-wo-Hbp" secondAttribute="leading" id="vCt-GY-6eY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mDc-wo-Hbp"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="uip-EF-OEg" id="mjf-pi-4pz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H9a-V6-MQP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="-128"/>
+        </scene>
+        <!--Country Informations View Controller-->
+        <scene sceneID="hjL-Xd-dJb">
+            <objects>
+                <viewController storyboardIdentifier="CountryInformationsViewController" id="xhx-OL-eqb" customClass="CountryInformationsViewController" customModule="Gotogames_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SDS-dm-i3l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0RL-HY-jaO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="48L-dV-G24"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Nom du pays] :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFx-9x-DbB">
+                                <rect key="frame" x="20" y="20" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3d3-h2-ev5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="country_name"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Capital] : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwn-jb-gZG">
+                                <rect key="frame" x="20" y="51" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="feV-mV-NME"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="capital_city_name"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCu-Md-252" customClass="MyCustomButton" customModule="Gotogames_app" customModuleProvider="target">
+                                <rect key="frame" x="50" y="100" width="314" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O55-Ei-AEz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="show_card_button"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showCardButtonSelected:" destination="xhx-OL-eqb" eventType="touchUpInside" id="S7h-gd-tx1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sum-Ja-CcK" firstAttribute="trailing" secondItem="gwn-jb-gZG" secondAttribute="trailing" constant="20" id="0Ci-gM-BG8"/>
+                            <constraint firstAttribute="trailing" secondItem="0RL-HY-jaO" secondAttribute="trailing" id="62F-r2-LPO"/>
+                            <constraint firstItem="eCu-Md-252" firstAttribute="leading" secondItem="Sum-Ja-CcK" secondAttribute="leading" constant="50" id="Chk-yi-jDK"/>
+                            <constraint firstItem="eCu-Md-252" firstAttribute="centerX" secondItem="Sum-Ja-CcK" secondAttribute="centerX" id="FEC-ji-7xF"/>
+                            <constraint firstItem="gwn-jb-gZG" firstAttribute="leading" secondItem="Sum-Ja-CcK" secondAttribute="leading" constant="20" id="FkJ-5o-E9K"/>
+                            <constraint firstItem="kFx-9x-DbB" firstAttribute="top" secondItem="SDS-dm-i3l" secondAttribute="top" constant="20" id="LB7-qo-E8X"/>
+                            <constraint firstAttribute="trailing" secondItem="kFx-9x-DbB" secondAttribute="trailing" constant="20" id="OCX-hP-2dh"/>
+                            <constraint firstItem="Sum-Ja-CcK" firstAttribute="bottom" secondItem="eCu-Md-252" secondAttribute="bottom" constant="20" id="Qg3-Fd-nMj"/>
+                            <constraint firstItem="Sum-Ja-CcK" firstAttribute="trailing" secondItem="eCu-Md-252" secondAttribute="trailing" constant="50" id="eKN-dr-wox"/>
+                            <constraint firstItem="gwn-jb-gZG" firstAttribute="top" secondItem="kFx-9x-DbB" secondAttribute="bottom" constant="10" id="gMI-Ni-Mfh"/>
+                            <constraint firstItem="0RL-HY-jaO" firstAttribute="top" secondItem="SDS-dm-i3l" secondAttribute="top" id="hok-mK-5oc"/>
+                            <constraint firstItem="kFx-9x-DbB" firstAttribute="leading" secondItem="SDS-dm-i3l" secondAttribute="leading" constant="20" id="nAc-S0-O7N"/>
+                            <constraint firstItem="0RL-HY-jaO" firstAttribute="leading" secondItem="SDS-dm-i3l" secondAttribute="leading" id="p9A-cP-i3C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sum-Ja-CcK"/>
+                    </view>
+                    <connections>
+                        <outlet property="capitalCityNameLabel" destination="gwn-jb-gZG" id="kdW-Ff-pRg"/>
+                        <outlet property="countryNameLabel" destination="kFx-9x-DbB" id="EO7-W7-7Rn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E2m-fn-3Lj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="199.55357142857142"/>
+        </scene>
+    </scenes>
+</document>
