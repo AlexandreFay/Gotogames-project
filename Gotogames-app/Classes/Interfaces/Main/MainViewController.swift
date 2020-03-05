@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, Storyboarded {
     
     var countryPickerViewController: CountryPickerViewController?
     var countryInformationsViewController: CountryInformationsViewController?
@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
             countryPickerViewController?.delegate = self
         } else if segue.identifier == "CountryInformationsSegue" {
             countryInformationsViewController = segue.destination as? CountryInformationsViewController
+            countryInformationsViewController?.delegate = self
         }
     }
 }
@@ -27,5 +28,13 @@ extension MainViewController: CountryPickerDelegate {
     
     func didSelectCountry(country: Country) {
         countryInformationsViewController?.selectedCountry = country
+    }
+}
+
+extension MainViewController: CountryInformationsDelegate {
+    
+    func didSelectCardButton() {
+        NavigationStrategy.sharedInstance.displayCardPage { (success, _) in
+        }
     }
 }

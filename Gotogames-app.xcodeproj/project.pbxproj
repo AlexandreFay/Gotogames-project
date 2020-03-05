@@ -14,6 +14,10 @@
 		FA77012024112BBF00B8F73F /* CountryInformationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77011F24112BBF00B8F73F /* CountryInformationsViewController.swift */; };
 		FA77012324114B1900B8F73F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA77012224114B1900B8F73F /* Localizable.strings */; };
 		FA7701252411519600B8F73F /* MyCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7701242411519600B8F73F /* MyCustomButton.swift */; };
+		FA770128241179E800B8F73F /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA770127241179E800B8F73F /* CardViewController.swift */; };
+		FA77012A241179FB00B8F73F /* CardStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA770129241179FA00B8F73F /* CardStoryboard.storyboard */; };
+		FA77012C24117B6E00B8F73F /* UIViewController+Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77012B24117B6E00B8F73F /* UIViewController+Storyboarded.swift */; };
+		FA7701302411800900B8F73F /* NavigationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77012F2411800900B8F73F /* NavigationStrategy.swift */; };
 		FAA64C3D2410202B00A037E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA64C3C2410202B00A037E3 /* MainViewController.swift */; };
 		FAB79B1D2410150800F55751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB79B1C2410150800F55751 /* AppDelegate.swift */; };
 		FAB79B212410150800F55751 /* UIViewLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB79B202410150800F55751 /* UIViewLocalizable.swift */; };
@@ -42,6 +46,10 @@
 		FA77011F24112BBF00B8F73F /* CountryInformationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInformationsViewController.swift; sourceTree = "<group>"; };
 		FA77012224114B1900B8F73F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		FA7701242411519600B8F73F /* MyCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomButton.swift; sourceTree = "<group>"; };
+		FA770127241179E800B8F73F /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		FA770129241179FA00B8F73F /* CardStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardStoryboard.storyboard; sourceTree = "<group>"; };
+		FA77012B24117B6E00B8F73F /* UIViewController+Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboarded.swift"; sourceTree = "<group>"; };
+		FA77012F2411800900B8F73F /* NavigationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStrategy.swift; sourceTree = "<group>"; };
 		FAA64C3C2410202B00A037E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FAB79B192410150800F55751 /* Gotogames-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gotogames-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB79B1C2410150800F55751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +152,15 @@
 			path = Ressources;
 			sourceTree = "<group>";
 		};
+		FA770126241179C900B8F73F /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				FA770127241179E800B8F73F /* CardViewController.swift */,
+				FA770129241179FA00B8F73F /* CardStoryboard.storyboard */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		FAB79B0F2410150800F55751 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				FAB79B202410150800F55751 /* UIViewLocalizable.swift */,
+				FA77012B24117B6E00B8F73F /* UIViewController+Storyboarded.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -203,6 +221,7 @@
 		FAB79B222410150800F55751 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				FA770126241179C900B8F73F /* Card */,
 				FA7701152411140300B8F73F /* Components */,
 				FA77011E24112B9A00B8F73F /* CountryInformations */,
 				FABB1D4E2410263A009CCF41 /* CountryPicker */,
@@ -215,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				FAB79B252410150800F55751 /* Theme */,
+				FA77012F2411800900B8F73F /* NavigationStrategy.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -404,6 +424,7 @@
 				FA77011D2411183100B8F73F /* CountryPickerTableViewCell.xib in Resources */,
 				FAB79B4A2410150900F55751 /* Assets.xcassets in Resources */,
 				FAB79B482410150900F55751 /* Main.storyboard in Resources */,
+				FA77012A241179FB00B8F73F /* CardStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,14 +497,17 @@
 			files = (
 				FA77011C2411183100B8F73F /* CountryPickerTableViewCell.swift in Sources */,
 				FABB1D5C2410301E009CCF41 /* CountryService.swift in Sources */,
+				FA77012C24117B6E00B8F73F /* UIViewController+Storyboarded.swift in Sources */,
 				FAB79B1D2410150800F55751 /* AppDelegate.swift in Sources */,
 				FA07F155241019E80009795C /* BundleConstants.swift in Sources */,
 				FABB1D5824102AE1009CCF41 /* Parser.swift in Sources */,
 				FAB79B292410150800F55751 /* Theme.swift in Sources */,
 				FAA64C3D2410202B00A037E3 /* MainViewController.swift in Sources */,
 				FABB1D502410267B009CCF41 /* CountryPickerViewController.swift in Sources */,
+				FA770128241179E800B8F73F /* CardViewController.swift in Sources */,
 				FABB1D5524102A33009CCF41 /* Service.swift in Sources */,
 				FABB1D5A24102E56009CCF41 /* Country.swift in Sources */,
+				FA7701302411800900B8F73F /* NavigationStrategy.swift in Sources */,
 				FABB1D5224102867009CCF41 /* CountryPickerViewModel.swift in Sources */,
 				FABB1D6724104541009CCF41 /* CountriesParser.swift in Sources */,
 				FA7701252411519600B8F73F /* MyCustomButton.swift in Sources */,

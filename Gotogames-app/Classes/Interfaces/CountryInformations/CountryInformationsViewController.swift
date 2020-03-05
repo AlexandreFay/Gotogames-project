@@ -8,10 +8,16 @@
 
 import UIKit
 
+protocol CountryInformationsDelegate: class {
+    func didSelectCardButton()
+}
+
 class CountryInformationsViewController: UIViewController {
     
     @IBOutlet weak var countryNameLabel: UILabel!
     @IBOutlet weak var capitalCityNameLabel: UILabel!
+    
+    weak var delegate: CountryInformationsDelegate?
     
     var selectedCountry: Country? {
         willSet {
@@ -27,4 +33,7 @@ class CountryInformationsViewController: UIViewController {
         capitalCityNameLabel.text = String(format: "capital_city_name".localized, "")
     }
 
+    @IBAction func showCardButtonSelected(_ sender: Any) {
+        delegate?.didSelectCardButton()
+    }
 }
