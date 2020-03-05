@@ -40,19 +40,14 @@ extension UIView: Localizable {
         switch self {
         case let label as UILabel:
             label.text = string
-            break
         case let button as UIButton:
-            button.setTitle(string, for: UIControlState())
-            break
+            button.setTitle(string, for: UIControl.State())
         case let textField as UITextField:
             textField.placeholder = string
-            break
         case let textView as UITextView:
             textView.text = string
-            break
         default:
             print("Unsupported localizable object: \(self)")
-            break
         }
     }
 }

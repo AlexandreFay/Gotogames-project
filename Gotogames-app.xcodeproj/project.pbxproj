@@ -3,11 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A7E23A109391ADE95AC377C4 /* Pods_Gotogames_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90BF32C8E7FE17E9E603962 /* Pods_Gotogames_app.framework */; };
+		FA07F155241019E80009795C /* BundleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F154241019E80009795C /* BundleConstants.swift */; };
+		FA77011C2411183100B8F73F /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77011A2411183100B8F73F /* CountryPickerTableViewCell.swift */; };
+		FA77011D2411183100B8F73F /* CountryPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA77011B2411183100B8F73F /* CountryPickerTableViewCell.xib */; };
+		FA77012024112BBF00B8F73F /* CountryInformationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77011F24112BBF00B8F73F /* CountryInformationsViewController.swift */; };
+		FA77012324114B1900B8F73F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA77012224114B1900B8F73F /* Localizable.strings */; };
+		FA7701252411519600B8F73F /* MyCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7701242411519600B8F73F /* MyCustomButton.swift */; };
+		FAA64C3D2410202B00A037E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA64C3C2410202B00A037E3 /* MainViewController.swift */; };
 		FAB79B1D2410150800F55751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB79B1C2410150800F55751 /* AppDelegate.swift */; };
 		FAB79B212410150800F55751 /* UIViewLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB79B202410150800F55751 /* UIViewLocalizable.swift */; };
 		FAB79B272410150800F55751 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB79B262410150800F55751 /* Style.swift */; };
@@ -15,27 +22,35 @@
 		FAB79B482410150900F55751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB79B462410150900F55751 /* Main.storyboard */; };
 		FAB79B4A2410150900F55751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB79B492410150900F55751 /* Assets.xcassets */; };
 		FAB79B4D2410150900F55751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB79B4B2410150900F55751 /* LaunchScreen.storyboard */; };
-		FAB79B562410156600F55751 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = FAB79B542410156600F55751 /* Gemfile */; };
-		FAB79B572410156600F55751 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAB79B552410156600F55751 /* Podfile */; };
+		FABB1D502410267B009CCF41 /* CountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB1D4F2410267B009CCF41 /* CountryPickerViewController.swift */; };
+		FABB1D5224102867009CCF41 /* CountryPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB1D5124102867009CCF41 /* CountryPickerViewModel.swift */; };
+		FABB1D5524102A33009CCF41 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB1D5424102A33009CCF41 /* Service.swift */; };
+		FABB1D5824102AE1009CCF41 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB1D5724102AE1009CCF41 /* Parser.swift */; };
+		FABB1D5A24102E56009CCF41 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB1D5924102E56009CCF41 /* Country.swift */; };
+		FABB1D5C2410301E009CCF41 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB1D5B2410301E009CCF41 /* CountryService.swift */; };
+		FABB1D6724104541009CCF41 /* CountriesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB1D6624104541009CCF41 /* CountriesParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		655CE8641811427BB40EFB82 /* Pods-Gotogames-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotogames-app.release.xcconfig"; path = "Target Support Files/Pods-Gotogames-app/Pods-Gotogames-app.release.xcconfig"; sourceTree = "<group>"; };
 		924DE798B322E5C09725FFDF /* Pods-Gotogames-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotogames-app.debug.xcconfig"; path = "Target Support Files/Pods-Gotogames-app/Pods-Gotogames-app.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB7C3A0EC40CB63C58C51E5 /* Pods-Gotogames-app.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotogames-app.proddebug.xcconfig"; path = "Target Support Files/Pods-Gotogames-app/Pods-Gotogames-app.proddebug.xcconfig"; sourceTree = "<group>"; };
 		D90BF32C8E7FE17E9E603962 /* Pods_Gotogames_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gotogames_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA07F154241019E80009795C /* BundleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleConstants.swift; sourceTree = "<group>"; };
+		FA77011A2411183100B8F73F /* CountryPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerTableViewCell.swift; sourceTree = "<group>"; };
+		FA77011B2411183100B8F73F /* CountryPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryPickerTableViewCell.xib; sourceTree = "<group>"; };
+		FA77011F24112BBF00B8F73F /* CountryInformationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInformationsViewController.swift; sourceTree = "<group>"; };
+		FA77012224114B1900B8F73F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FA7701242411519600B8F73F /* MyCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomButton.swift; sourceTree = "<group>"; };
+		FAA64C3C2410202B00A037E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FAB79B192410150800F55751 /* Gotogames-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gotogames-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB79B1C2410150800F55751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB79B202410150800F55751 /* UIViewLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLocalizable.swift; sourceTree = "<group>"; };
-		FAB79B232410150800F55751 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		FAB79B262410150800F55751 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		FAB79B282410150800F55751 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		FAB79B2B2410150800F55751 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		FAB79B2D2410150800F55751 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		FAB79B2F2410150800F55751 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		FAB79B312410150900F55751 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		FAB79B332410150900F55751 /* Gotogames-appAppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Gotogames-appAppStore.xcconfig"; sourceTree = "<group>"; };
-		FAB79B342410150900F55751 /* Gotogames-appDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Gotogames-appDebug.xcconfig"; sourceTree = "<group>"; };
-		FAB79B352410150900F55751 /* Gotogames-appInHouse.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Gotogames-appInHouse.xcconfig"; sourceTree = "<group>"; };
+		FAB79B342410150900F55751 /* Gotogames-app - ProdDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Gotogames-app - ProdDebug.xcconfig"; sourceTree = "<group>"; };
 		FAB79B372410150900F55751 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
 		FAB79B392410150900F55751 /* AppSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppSettings.xcconfig; sourceTree = "<group>"; };
 		FAB79B3A2410150900F55751 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
@@ -49,8 +64,13 @@
 		FAB79B492410150900F55751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB79B4C2410150900F55751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB79B4E2410150900F55751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAB79B542410156600F55751 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
-		FAB79B552410156600F55751 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		FABB1D4F2410267B009CCF41 /* CountryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerViewController.swift; sourceTree = "<group>"; };
+		FABB1D5124102867009CCF41 /* CountryPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerViewModel.swift; sourceTree = "<group>"; };
+		FABB1D5424102A33009CCF41 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		FABB1D5724102AE1009CCF41 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		FABB1D5924102E56009CCF41 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		FABB1D5B2410301E009CCF41 /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		FABB1D6624104541009CCF41 /* CountriesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +98,56 @@
 			children = (
 				924DE798B322E5C09725FFDF /* Pods-Gotogames-app.debug.xcconfig */,
 				655CE8641811427BB40EFB82 /* Pods-Gotogames-app.release.xcconfig */,
+				CBB7C3A0EC40CB63C58C51E5 /* Pods-Gotogames-app.proddebug.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA07F152241017E30009795C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FAB79B462410150900F55751 /* Main.storyboard */,
+				FAA64C3C2410202B00A037E3 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FA07F153241019C70009795C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA07F154241019E80009795C /* BundleConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA7701152411140300B8F73F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA7701242411519600B8F73F /* MyCustomButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA77011E24112B9A00B8F73F /* CountryInformations */ = {
+			isa = PBXGroup;
+			children = (
+				FA77011F24112BBF00B8F73F /* CountryInformationsViewController.swift */,
+			);
+			path = CountryInformations;
+			sourceTree = "<group>";
+		};
+		FA77012124114AD400B8F73F /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				FA77012224114B1900B8F73F /* Localizable.strings */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 		FAB79B0F2410150800F55751 = {
 			isa = PBXGroup;
 			children = (
+				FAB79B322410150900F55751 /* Configuration */,
 				FAB79B1B2410150800F55751 /* Gotogames-app */,
 				FAB79B1A2410150800F55751 /* Products */,
 				7E9B9888EBEFFEE96709DB1F /* Pods */,
@@ -105,14 +167,10 @@
 			isa = PBXGroup;
 			children = (
 				FAB79B1C2410150800F55751 /* AppDelegate.swift */,
-				FAB79B462410150900F55751 /* Main.storyboard */,
 				FAB79B492410150900F55751 /* Assets.xcassets */,
 				FAB79B4B2410150900F55751 /* LaunchScreen.storyboard */,
 				FAB79B4E2410150900F55751 /* Info.plist */,
-				FAB79B542410156600F55751 /* Gemfile */,
-				FAB79B552410156600F55751 /* Podfile */,
 				FAB79B1E2410150800F55751 /* Classes */,
-				FAB79B322410150900F55751 /* Configuration */,
 				FAB79B442410150900F55751 /* Scripts */,
 			);
 			path = "Gotogames-app";
@@ -121,12 +179,14 @@
 		FAB79B1E2410150800F55751 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FA07F153241019C70009795C /* Constants */,
 				FAB79B1F2410150800F55751 /* Extensions */,
 				FAB79B222410150800F55751 /* Interfaces */,
 				FAB79B242410150800F55751 /* Managers */,
 				FAB79B2A2410150800F55751 /* Models */,
 				FAB79B2C2410150800F55751 /* Parsers */,
 				FAB79B2E2410150800F55751 /* Providers */,
+				FA77012124114AD400B8F73F /* Ressources */,
 				FAB79B302410150900F55751 /* Services */,
 			);
 			path = Classes;
@@ -143,7 +203,10 @@
 		FAB79B222410150800F55751 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				FAB79B232410150800F55751 /* .gitkeep */,
+				FA7701152411140300B8F73F /* Components */,
+				FA77011E24112B9A00B8F73F /* CountryInformations */,
+				FABB1D4E2410263A009CCF41 /* CountryPicker */,
+				FA07F152241017E30009795C /* Main */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -168,7 +231,7 @@
 		FAB79B2A2410150800F55751 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FAB79B2B2410150800F55751 /* .gitkeep */,
+				FABB1D5924102E56009CCF41 /* Country.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,7 +239,8 @@
 		FAB79B2C2410150800F55751 /* Parsers */ = {
 			isa = PBXGroup;
 			children = (
-				FAB79B2D2410150800F55751 /* .gitkeep */,
+				FABB1D5624102AD5009CCF41 /* Base */,
+				FABB1D6624104541009CCF41 /* CountriesParser.swift */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -192,7 +256,8 @@
 		FAB79B302410150900F55751 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FAB79B312410150900F55751 /* .gitkeep */,
+				FABB1D5324102A24009CCF41 /* Base */,
+				FABB1D5B2410301E009CCF41 /* CountryService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -201,8 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				FAB79B332410150900F55751 /* Gotogames-appAppStore.xcconfig */,
-				FAB79B342410150900F55751 /* Gotogames-appDebug.xcconfig */,
-				FAB79B352410150900F55751 /* Gotogames-appInHouse.xcconfig */,
+				FAB79B342410150900F55751 /* Gotogames-app - ProdDebug.xcconfig */,
 				FAB79B362410150900F55751 /* Environment */,
 				FAB79B382410150900F55751 /* Shared */,
 			);
@@ -237,6 +301,41 @@
 				FAB79B452410150900F55751 /* swift_lint.sh */,
 			);
 			path = Scripts;
+			sourceTree = "<group>";
+		};
+		FABB1D4E2410263A009CCF41 /* CountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				FABB1D6824105BCB009CCF41 /* Cell */,
+				FABB1D4F2410267B009CCF41 /* CountryPickerViewController.swift */,
+				FABB1D5124102867009CCF41 /* CountryPickerViewModel.swift */,
+			);
+			path = CountryPicker;
+			sourceTree = "<group>";
+		};
+		FABB1D5324102A24009CCF41 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FABB1D5424102A33009CCF41 /* Service.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FABB1D5624102AD5009CCF41 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FABB1D5724102AE1009CCF41 /* Parser.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FABB1D6824105BCB009CCF41 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA77011A2411183100B8F73F /* CountryPickerTableViewCell.swift */,
+				FA77011B2411183100B8F73F /* CountryPickerTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,9 +399,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB79B572410156600F55751 /* Podfile in Resources */,
-				FAB79B562410156600F55751 /* Gemfile in Resources */,
+				FA77012324114B1900B8F73F /* Localizable.strings in Resources */,
 				FAB79B4D2410150900F55751 /* LaunchScreen.storyboard in Resources */,
+				FA77011D2411183100B8F73F /* CountryPickerTableViewCell.xib in Resources */,
 				FAB79B4A2410150900F55751 /* Assets.xcassets in Resources */,
 				FAB79B482410150900F55751 /* Main.storyboard in Resources */,
 			);
@@ -375,9 +474,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA77011C2411183100B8F73F /* CountryPickerTableViewCell.swift in Sources */,
+				FABB1D5C2410301E009CCF41 /* CountryService.swift in Sources */,
 				FAB79B1D2410150800F55751 /* AppDelegate.swift in Sources */,
+				FA07F155241019E80009795C /* BundleConstants.swift in Sources */,
+				FABB1D5824102AE1009CCF41 /* Parser.swift in Sources */,
 				FAB79B292410150800F55751 /* Theme.swift in Sources */,
+				FAA64C3D2410202B00A037E3 /* MainViewController.swift in Sources */,
+				FABB1D502410267B009CCF41 /* CountryPickerViewController.swift in Sources */,
+				FABB1D5524102A33009CCF41 /* Service.swift in Sources */,
+				FABB1D5A24102E56009CCF41 /* Country.swift in Sources */,
+				FABB1D5224102867009CCF41 /* CountryPickerViewModel.swift in Sources */,
+				FABB1D6724104541009CCF41 /* CountriesParser.swift in Sources */,
+				FA7701252411519600B8F73F /* MyCustomButton.swift in Sources */,
 				FAB79B272410150800F55751 /* Style.swift in Sources */,
+				FA77012024112BBF00B8F73F /* CountryInformationsViewController.swift in Sources */,
 				FAB79B212410150800F55751 /* UIViewLocalizable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +515,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FAB79B4F2410150900F55751 /* Debug */ = {
+		FAB79B4F2410150900F55751 /* ProdDebug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -454,7 +565,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -462,70 +573,17 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = ProdDebug;
 		};
-		FAB79B502410150900F55751 /* Release */ = {
+		FAB79B522410150900F55751 /* ProdDebug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FAB79B522410150900F55751 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 924DE798B322E5C09725FFDF /* Pods-Gotogames-app.debug.xcconfig */;
+			baseConfigurationReference = FAB79B342410150900F55751 /* Gotogames-app - ProdDebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L65NC338AZ;
 				INFOPLIST_FILE = "Gotogames-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,26 +593,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
-		};
-		FAB79B532410150900F55751 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655CE8641811427BB40EFB82 /* Pods-Gotogames-app.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L65NC338AZ;
-				INFOPLIST_FILE = "Gotogames-app/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gotogames.Gotogames-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
+			name = ProdDebug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -562,20 +601,18 @@
 		FAB79B132410150800F55751 /* Build configuration list for PBXProject "Gotogames-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAB79B4F2410150900F55751 /* Debug */,
-				FAB79B502410150900F55751 /* Release */,
+				FAB79B4F2410150900F55751 /* ProdDebug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = ProdDebug;
 		};
 		FAB79B512410150900F55751 /* Build configuration list for PBXNativeTarget "Gotogames-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAB79B522410150900F55751 /* Debug */,
-				FAB79B532410150900F55751 /* Release */,
+				FAB79B522410150900F55751 /* ProdDebug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = ProdDebug;
 		};
 /* End XCConfigurationList section */
 	};

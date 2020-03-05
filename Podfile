@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'git@bitbucket.org:ikomobi/ikopods.git'
 
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 use_frameworks!
 
